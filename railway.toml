@@ -2,4 +2,5 @@
 builder = "nixpacks"
 
 [deploy]
-startCommand = "echo 'Railway connected'"
+startCommand = "npm start"
+restartPolicyType = "on_failure"

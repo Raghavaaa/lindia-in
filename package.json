@@ -1,0 +1,13 @@
+{
+  "name": "legalindia-infra",
+  "version": "1.0.0",
+  "description": "LegalIndia Infrastructure Connection Layer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
