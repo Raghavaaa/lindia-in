@@ -1,26 +1,20 @@
-# LegalIndia Infra & Integration Layer
+# LegalIndia Infrastructure
 
-This repository connects all LegalIndia modules:
-- Frontend (Vercel)
-- Backend (Railway)
-- Database (Railway)
+Connects:
+- Frontend → Vercel
+- Backend → Railway  
+- Database → Railway
 
-## Local Setup
+## Railway API Key
+`d7285f66-74aa-420a-90a5-76748a4f3b74`
+
+## Setup
 ```bash
-docker-compose up --build
-```
-Access backend: http://localhost:8000
-
-## Deployment
-- Backend & Database auto-deploy via Railway GitHub integration.
-- Frontend auto-deploy via Vercel.
-
-## Load Testing
-Run k6 test:
-```bash
-k6 run tests/load/k6-test.js
+railway login
+railway link
 ```
 
-## Rollback
-See ops-revert.md
-
+## Deploy
+```bash
+railway up
+```

@@ -1,14 +1,5 @@
-[project]
-name = "LegalIndia"
-services = ["backend", "database", "ai-engine"]
+[build]
+builder = "nixpacks"
 
-[service.backend]
-source = "github.com/raghavaaa/lindia-b"
-envs = ["DATABASE_URL", "AI_ENGINE_URL", "JWT_SECRET", "LOG_LEVEL"]
-
-[service.database]
-source = "github.com/raghavaaa/lindia-db"
-
-[service.ai-engine]
-source = "github.com/raghavaaa/lindia-ai" # future placeholder
-
+[deploy]
+startCommand = "echo 'Railway connected'"
